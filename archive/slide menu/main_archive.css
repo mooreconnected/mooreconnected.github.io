@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Nella Sue Demo';
+    src: url("../fonts/NellaSue.ttf") format("truetype");
+}
+
+@media (min-width:802px) {
+    .desktop-only {
+        display:block !important;
+    }
+
+    .mobile-only {
+        display:none !important;
+    }
+}
+
+@media (max-width: 801px) {
+    .mobile-only {
+        display:block !important;
+    }
+
+    .desktop-only {
+        display:none !important;
+    }
+  }
+
+body {
+  background-color: #FFFFFD;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile_menu_open {
+  position: absolute;
+  padding-top: 5%;
+  padding-left: 5%;
+  font-family: 'Nella Sue Demo';
+  font-size: 1vw !important;
+  color: #86E2D5 !important;
+}
+
+/* Initial menu */
+.mobilemenu {
+
+  left: -20%;  /* start off behind the scenes */
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: #219172;
+}
+
+.mobilemenu li {
+  display: none;
+}
+
+.mobilemenu .menu_list {
+  padding-top: 100px;
+  width: 100%;
+}
+
+.mobilemenu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mobilemenu span {
+  position: absolute;
+  color: #fff;
+  display: inline;
+  left: 25px;
+  margin-top: 25px;
+
+}
+
+ul.nav.nav-pills.nav-justified > li {
+  font-family: 'Nella Sue Demo';
+  font-size: 30px;
+}
+
+.first_page {
+  width: 100%;
+  text-align: center;
+  font-family: 'Nella Sue Demo';
+  color: #86E2D5;
+}
+
+.second_page {
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nella Sue Demo';
+  color: #86E2D5;
+  font-size: 4vw;
+}
+
+.third_page {
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nella Sue Demo';
+  color: #86E2D5;
+  font-size: 4vw;
+}
+
+.moore_connected_logo {
+  margin-top: 7%;
+  display: inline-block;
+  width: auto;
+}
+
+.homepagetext {
+  padding-top: 7%;
+  font-size: 3vw;
+}

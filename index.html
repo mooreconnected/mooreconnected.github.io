@@ -1,7 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8iP2OOhnAxtldIFFRB16Gcgai9f_xChhIP4mem8dui0" />
+
+  <title>Moore Connected - Over 50's computer tuition</title>
+
+  <link rel="shortcut icon" type="image/ico" href="./favicon.png" />
+
+  <meta property="og:site_name" content="Moore Connected" />
+  <meta property="og:title" content="Moore Connected - Over 50's computer tuition" />
+  <meta property="og:image" content="http://www.mooreconnected.co.uk/assets/img/moore_connected_riptide.png" />
+  <meta property="og:description" content="Helping people get connected. Over 50s computer and tablet tuition" />
+
+  <meta property="og:url" content="http://www.mooreconnected.co.uk" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Moore Connected - Over 50's computer tuition" />
+  <meta name="title" content="Moore Connected - Over 50's computer tuition" />
+
+  <meta name="author" content="Moore Connected" />
+  <meta name="description" content="Helping people get connected. Over 50s computer and tablet tuition" />
+  <meta name="Copyright" content="Moore Connected" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#mobileMenuButtons').on('click', function(){
+        $('#toggle-nav-label').trigger("click");
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/animate.css">
+  <link href="./assets/css/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+</head>
+
+<header id="head">
+	<div class="container mobile-only">
+    	<nav id="menu">
+
+    		<input type="checkbox" id="toggle-nav"/>
+    		<label class="noselect" id="toggle-nav-label" for="toggle-nav">Menu</label>
+
+    		<div class="box">
+          <ul class="nav nav-pills nav-justified" id="mobileMenuButtons">
+            <li class="active"><a class="noselect" data-toggle="pill" href="#home">Home</a></li>
+            <li><a class="noselect" data-toggle="pill" href="#aboutme">About Me</a></li>
+            <li><a class="noselect" data-toggle="pill" href="#contact">Contact</a></li>
+          </ul>
+    		</div>
+
+    	</nav>
+	</div>
+</header>
+<!-- end header -->
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="menu desktop-only" id="desktop_menu">
+    <ul class="nav nav-pills nav-justified">
+      <li class="active"><a class="noselect" data-toggle="pill" href="#home"><img src="./assets/img/newLogo.png" id="menuLogo"/>Home</a></li>
+      <li><a class="noselect" data-toggle="pill" href="#aboutme">About Me</a></li>
+      <li><a class="noselect" data-toggle="pill" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+<div class="tab-content">
+
+  <div id="home" class="tab-pane fade in active">
+  <div class="first_page desktop-only" id="first_page_desktop">
+    <div class="moore_connected_logo_desktop">
+      <img src="./assets/img/mcLogo.png" width="300px" class="animated pulse">
+    </div>
+
+    <div class="homepagetext_desktop">
+      <p>Computer & tablet tuition</p>
+    </div>
+  </div>
+  <div class="first_page mobile-only" id="first_page_mobile">
+    <div class="moore_connected_logo_mobile">
+      <img src="./assets/img/mcLogo.png" width="40%" class="animated pulse">
+    </div>
+
+    <div class="homepagetext_mobile">
+      <p>Computer & tablet tuition</p>
+    </div>
+  </div>
+</div>
+
+<div id="aboutme" class="tab-pane fade">
+  <div class="second_page desktop-only">
+      <img src="./assets/img/personal_photo.jpg" id="personal_photo_desktop" class="desaturate animated slideInLeft"></img>
+      <div class="biography_desktop desktop-only animated slideInRight">
+        <div class="bio_text_desktop">
+          <p>Learning to user a computer or tablet can be overwhelming and frustrating without the right help.<p/>
+          <p>Emily offers individual and group tuition to cater for any level of experience (or inexperience!).<p/>
+          <p>Anyone and everyone can benefit enormously from all that technology has to offer.<p/>
+          <p>Perhaps most importantly, it makes it easier to stay in touch with family and friends in a world that can otherwise feel lonely.<p/>
+        </div>
+      </div>
+  </div>
+
+  <div class="second_page mobile-only">
+      <img src="./assets/img/personal_photo.jpg" id="personal_photo_mobile" class="desaturate animated fadeInDown"></img>
+      <div class="biography_mobile mobile-only animated fadeInUp">
+        <div class="bio_text_mobile">
+        Learning to user a computer or tablet can be overwhelming and frustrating without the right help. Emily offers individual and group tuition to cater for any level of experience (or inexperience!). Anyone and everyone can benefit enormously from all that technology has to offer. Perhaps most importantly, it makes it easier to stay in touch with family and friends in a world that can otherwise feel lonely.
+        </div>
+      </div>
+  </div>
+</div>
+
+<div id="contact" class="tab-pane fade">
+    <div class="third_page animated fadeInUp desktop-only">
+      <div class="third_page_contact_desktop">
+        <div class="business_card_desktop">
+          <p>Emily Moore</p>
+          <p/>
+          <p>07789443051</p>
+          <p><a href="http://mooreconnected.co.uk">www.mooreconnected.co.uk<a/></p>
+          <p><a href="mailto:emily@mooreconnected.co.uk?subject=Info">emily@mooreconnected.co.uk</a></p>
+        </div>
+      </div>
+  </div>
+
+  <div class="third_page animated fadeInUp mobile-only">
+    <div class="third_page_contact_mobile">
+      <div class="business_card_mobile">
+        <p>Emily Moore</p>
+        <p>07789443051</p>
+        <p><a href="http://mooreconnected.co.uk">www.mooreconnected.co.uk<a/><p/>
+        <p><a href="mailto:emily@mooreconnected.co.uk?subject=Info">emily@mooreconnected.co.uk</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 </body>
+
+
 </html>

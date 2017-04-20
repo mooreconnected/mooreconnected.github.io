@@ -1,0 +1,370 @@
+@import url('http://fonts.googleapis.com/css?family=Merriweather+Sans:700,300');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css');
+
+
+@font-face {
+  font-family: 'Gotham Light';
+    src: url("../fonts/ufonts.com_gotham-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+    src: url("../fonts/ufonts.com_gotham-book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Hoefler Text';
+    src: url("../fonts/HoeflerText-RomanSC.otf") format("opentype");
+}
+
+@media (min-width:802px) {
+    .desktop-only {
+        display:block !important;
+    }
+
+    .mobile-only {
+        display:none !important;
+    }
+
+    #head {display: none !important;}
+}
+
+@media (max-width: 801px) {
+    .mobile-only {
+        display:block !important;
+    }
+
+    .desktop-only {
+        display:none !important;
+    }
+  }
+
+* { padding: 0px; margin: 0px; border: 0px; outline: 0px; }		/* fast reset */
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+li { list-style: none; }
+
+.container { margin: 0px 20% 0px 20%; }
+
+#head { margin-top: 20px; }
+
+#desktop_menu {
+  background: #AEC2CF !important;
+}
+
+#desktop_menu a{
+  color: #093F65;
+  height: 62px;
+}
+
+#desktop_menu a:hover{
+  color: #fff !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background: #093F65 !important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background: #093F65 !important;
+  color: #ffffff !important;
+}
+
+#menuLogo {
+  width:30px;
+  left:5%;
+  position: fixed;
+}
+
+#menu .box {
+	position: fixed;
+	text-align: center;
+	overflow: hidden;
+	z-index: -1;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background: rgba(174,194,207,0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-pills > li > a {
+  border-radius: none!important;
+}
+
+#menu ul {
+	position: relative;
+	top: 20%;
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#menu li {
+	display: inline-block;
+	margin: 20px;
+}
+
+#menu li a {
+	border-radius: 3px;
+	padding: 15px;
+	border: 1px solid;
+	text-decoration: none;
+	font-size: 30px;
+	color: #093F65;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+#menu li a:hover { border-color: #fff; }
+
+#menu li a i {
+	margin-right: 5px;
+	font-size: 24px;
+}
+
+#toggle-nav-label {
+  color: #093F65;
+  background: #AEC2CF;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 500;
+  width: 20%;
+  height: 50px;
+  border-radius: 5px;
+  font-family: 'Hoefler Text';
+  left: 5%;
+}
+
+#toggle-nav { display: none; }
+
+#toggle-nav:checked ~ .box {
+	opacity: 1;
+	z-index: 400;
+}
+
+#toggle-nav:checked ~ .box ul {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+#toggle-nav:checked ~ #toggle-nav-label {
+	background: #093F65;
+	color: #AEC2CF;
+}
+
+#content { margin: 20px 0px 20px 0px; }
+
+#content h1 {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+#content p {
+	font-size: 14px;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+
+#mobileMenuButtons > li {
+  display: list-item;
+  width:auto !important;
+}
+
+
+
+
+
+body {
+  background-color: #FFFFFD;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+ul.nav.nav-pills.nav-justified > li {
+  font-family: 'Hoefler Text';
+  font-size: 30px;
+}
+
+img.desaturate { filter: grayscale(100%); }
+
+img.desaturate { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+
+#first_page_desktop {
+  width: 100%;
+  text-align: center;
+  font-family: 'Gotham Light';
+  color: #093F65;
+}
+
+#first_page_mobile {
+  width: 100%;
+  text-align: center;
+  font-family: 'Gotham Light';
+  color: #093F65;
+}
+
+.second_page {
+  padding-top: 10%;
+  width: 100%;
+  font-family: 'Gotham Light';
+  color: #093F65;
+}
+
+.second_page + .mobile-only {
+  text-align: center;
+  padding-top: 1% !important;
+}
+
+#personal_photo_desktop {
+  width: 200px;
+  border-radius: 15px;
+  margin-left: 16vw;
+}
+
+#personal_photo_mobile {
+  width: 25%;
+  border-radius: 15px;
+}
+
+.third_page_contact_desktop {
+  padding-top: 120px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Gotham Light';
+  color: #093F65;
+  font-size: 4vw;
+}
+
+.third_page_contact_mobile {
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Gotham Light';
+  color: #093F65;
+  font-size: 7vw;
+}
+
+.moore_connected_logo_desktop {
+  margin-top: 7%;
+  display: inline-block;
+  width: auto;
+}
+
+.homepagetext_desktop {
+  padding-top: 100px;
+  font-size: 30px;
+}
+
+.moore_connected_logo_mobile {
+  margin-top: 10%;
+  display: inline-block;
+  width: auto;
+  max-width: 500px;
+}
+
+.homepagetext_mobile {
+  padding-top: 16%;
+  font-size: 6vw;
+}
+
+.business_card_desktop {
+  border: solid;
+  border-color: #AEC2CF;
+  border-width: medium;
+  border-radius: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.business_card_mobile {
+  border: solid;
+  border-color: #AEC2CF;
+  border-width: medium;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  top: 100px !important;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: absolute;
+}
+
+.business_card_desktop a{
+  text-decoration: none!important;
+  color: #093F65 !important;
+  font-size: 25px;
+}
+
+.business_card_mobile a{
+  text-decoration: none!important;
+  color: #093F65 !important;
+  font-size: 3vw;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.biography_desktop {
+  width: 50%;
+  position: fixed;
+  border: none;
+  border-color: #093F65;
+  border-width: medium;
+  background-color: #fff;
+  border-radius: 15px;
+  right: 8%;
+  top: 25%;
+  font-size: 20px;
+}
+
+.biography_mobile {
+  width: 80%;
+  border: none;
+  border-color: #093F65;
+  border-width: medium;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 10%;
+  position: relative;
+  margin-left: 10%;
+}
+
+.bio_text_desktop {
+  padding: 4%;
+}
+
+.bio_text_mobile {
+  padding: 4%;
+}
